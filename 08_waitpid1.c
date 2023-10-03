@@ -10,5 +10,7 @@ int main(){
         if ((pid=Fork())==0) /* child */
             exit(100+i);
     }
+
+    printf("Hello World!\n");
 }
 
