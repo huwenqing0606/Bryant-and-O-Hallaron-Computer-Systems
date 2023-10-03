@@ -40,12 +40,12 @@ int main(){
 		p = &a;
 		q = &b;
 		swap(p, q); 
-		printf("swap a=%d b=%d gives %d %d \n", a, b, *p, *q);
+		printf("swap a=%ld b=%ld gives %ld %ld \n", a, b, *p, *q);
 	}
 	else {
 		a = func1();
 		b = func2();
-		printf("a= %d, b= %d \n", a, b);
+		printf("a= %ld, b= %ld \n", a, b);
 	}
 	return 0;
 }
