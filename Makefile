@@ -1,7 +1,8 @@
-all:	exec/05_exercise_5-1 \
-		exec/05_prefix_sum \
-	 	exec/08_syscall_write \
-		exec/08_waitpid1 \
+all: exec/05_exercise_5-1 \
+	 exec/05_prefix_sum \
+	 exec/08_syscall_write \
+	 exec/08_waitpid1 \
+	 exec/08_waitpid2 \
 
 PHONY: all
 
@@ -16,3 +17,6 @@ exec/08_syscall_write: 08_syscall_write.c csapp.c
 
 exec/08_waitpid1: 08_waitpid1.c csapp.c
 	gcc -o exec/08_waitpid1 08_waitpid1.c csapp.c
+
+exec/08_waitpid2: 08_waitpid2.c csapp.c
+	gcc -o exec/08_waitpid2 08_waitpid2.c csapp.c
