@@ -5,6 +5,7 @@ all: exec \
 	 exec/08_waitpid1 \
 	 exec/08_waitpid2 \
 	 exec/08_shellex \
+	 exec/12_echoservert \
 
 .PHONY: all
 
@@ -28,3 +29,6 @@ exec/08_waitpid2: 08_waitpid2.c csapp.c
 
 exec/08_shellex: 08_shellex.c csapp.c
 	gcc -o exec/08_shellex 08_shellex.c csapp.c
+
+exec/12_echoservert: 12_echoservert.c csapp.c
+	gcc -o exec/12_echoservert 12_echoservert.c csapp.c
